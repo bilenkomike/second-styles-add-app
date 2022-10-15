@@ -16,14 +16,14 @@ const FormControl = styled.div`
   font-weight: bold;
   display: block;
   margin-bottom: 0.5rem;
-  color: ${props => props.isValid ? 'red' : 'black'};
+  color: ${props => props.invalid ? 'red' : 'black'};
 }
 
 & input {
   display: block;
   width: 100%;
   border: 1px solid ${props => props.invalid ? 'red': '#ccc'};
-  background-color: ${props.invalid ? '#ffd7d7d' : 'transparent'};
+  background-color: ${props => props.invalid ? '#ffd7d7d' : 'transparent'};
   font: inherit;
   line-height: 1.5rem;
   padding: 0 0.25rem;
